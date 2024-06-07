@@ -7,9 +7,6 @@ import { IContent } from '../content.model';
   styleUrls: ['./content-list.component.scss']
 })
 export class ContentListComponent {
-  // Define the IContent interface
-
-  // Array of IContent items
   contents: IContent[] = [
     {
       title: 'Inception',
@@ -29,7 +26,7 @@ export class ContentListComponent {
     },
     {
       title: 'Interstellar',
-      imgSrc: 'path_to_image3.jpg',
+      imgSrc: 'https://m.media-amazon.com/images/M/MV5BMTY3OTc2Nzk2OV5BMl5BanBnXkFtZTgwNTc0OTY3MDE@._V1_.jpg',
       description: 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity\'s survival...',
       author: 'Christopher Nolan',
       type: 'Movie',
