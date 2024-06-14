@@ -1,9 +1,3 @@
-<!-- <p>content-list works!</p>> -->
-<div class="content-list">
-  <app-content-list-item
-    *ngFor="let content of contents; let i = index"
-    [content]="content"
-    [class.even]="i % 2 === 0"
-    [class.odd]="i % 2 !== 0">
-  </app-content-list-item>
+<div *ngFor="let content of contents; let i = index" [ngClass]="{'even': i % 2 === 0, 'odd': i % 2 !== 0}">
+  <app-content-list-item [content]="content"></app-content-list-item>
 </div>

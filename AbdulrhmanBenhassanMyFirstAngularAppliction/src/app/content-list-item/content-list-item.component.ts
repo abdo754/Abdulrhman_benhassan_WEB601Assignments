@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IContent } from '../content.model';
+import { IContent } from '../data/mock-content';
 
 @Component({
   selector: 'app-content-list-item',
