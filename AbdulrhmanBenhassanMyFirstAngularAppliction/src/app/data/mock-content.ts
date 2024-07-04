@@ -11,7 +11,7 @@ export interface IContent {
 export const contents: IContent[] = [
   {
     title: 'Inception',
-    imgSrc: 'assets/images/inception.jpg', // Update with the correct path
+    imgSrc: 'assets/images/inception.jpg',
     description: 'A thief who steals corporate secrets through the use of dream-sharing technology...',
     author: 'Christopher Nolan',
     type: 'Movie',
@@ -29,7 +29,7 @@ export const contents: IContent[] = [
   },
   {
     title: 'Interstellar',
-    imgSrc: 'https://m.media-amazon.com/images/M/MV5BMTY3OTc2Nzk2OV5BMl5BanBnXkFtZTgwNTc0OTY3MDE@._V1_.jpg', // Update with the correct path
+    imgSrc: 'https://m.media-amazon.com/images/M/MV5BMTY3OTc2Nzk2OV5BMl5BanBnXkFtZTgwNTc0OTY3MDE@._V1_.jpg',
     description: 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity\'s survival...',
     author: 'Christopher Nolan',
     type: 'Movie',
@@ -38,7 +38,7 @@ export const contents: IContent[] = [
   },
   {
     title: 'The Dark Knight',
-    imgSrc: 'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg', // Update with the correct path
+    imgSrc: 'https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg', 
     description: 'When the menace known as the Joker emerges from his mysterious past, he wreaks havoc...',
     author: 'Christopher Nolan',
     type: 'Movie',
