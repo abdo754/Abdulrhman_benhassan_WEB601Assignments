@@ -5,4 +5,5 @@ export interface IContent {
   author: string;
   type: string;
   tags: string[];
+
 }
