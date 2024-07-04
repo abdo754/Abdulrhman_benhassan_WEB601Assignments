@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { IContent, contents } from '../data/mock-content';
+
 @Injectable({
   providedIn: 'root'
 })
 export class MovieService {
+
   // Method to return the contents array as an Observable
   getContents(): Observable<IContent[]> {
     return of(contents);
@@ -12,7 +14,8 @@ export class MovieService {
 
   // Method to get a content item by id
   getContentById(id: number): Observable<IContent | undefined> {
-    return of(contents.find(content => content.id === id));
+    const content = contents.find(content => content.id === id);
+    return of(content);
   }
 
   // Method to add a new content item
@@ -34,8 +37,8 @@ export class MovieService {
   deleteContent(id: number): Observable<IContent | undefined> {
     const index = contents.findIndex(content => content.id === id);
     if (index !== -1) {
-      const removed = contents.splice(index, 1);
-      return of(removed[0]);
+      const [removed] = contents.splice(index, 1);
+      return of(removed);
     }
     return of(undefined);
   }
