@@ -9,6 +9,9 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { BuyComponent } from './buy/buy.component';
 import { SellComponent } from './sell/sell.component';
 import { FilterIContentPipe } from './filter-icontent.pipe';
+import { ContentListItemComponent } from './content-list-item/content-list-item.component'; // Add this line
+
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,7 @@ import { FilterIContentPipe } from './filter-icontent.pipe';
     ContentDetailComponent,
     UserFormComponent,
     BuyComponent,
-    ContentListComponent,
+    ContentListItemComponent,
     SellComponent,
     FilterIContentPipe
   ],
