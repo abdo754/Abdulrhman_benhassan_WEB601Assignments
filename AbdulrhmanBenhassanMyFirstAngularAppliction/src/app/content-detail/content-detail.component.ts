@@ -22,6 +22,6 @@ export class ContentDetailComponent implements OnInit {
 
   getContent(): void {
     const id = +this.route.snapshot.paramMap.get('id')!;
-    this.movieService.getContentById(id).subscribe(content => this.content = content);
+    this.movieService.getContentById(id).subscribe((content: IContent | undefined) => this.content = content);
   }
 }

@@ -1,3 +1,16 @@
-<div *ngFor="let content of contents; let i = index" [ngClass]="{'even': i % 2 === 0, 'odd': i % 2 !== 0}">
-  <app-content-list-item [content]="content"></app-content-list-item>
+<div class="content-list">
+  <h2>Movies</h2>
+  <div *ngFor="let content of contents | filterIContent:'Movie'" class="movie-list">
+    <app-content-item [content]="content"></app-content-item>
+  </div>
+
+  <h2>TV Shows</h2>
+  <div *ngFor="let content of contents | filterIContent:'TV Show'" class="tv-show-list">
+    <app-content-item [content]="content"></app-content-item>
+  </div>
+
+  <h2>Uncategorized</h2>
+  <div *ngFor="let content of contents | filterIContent" class="uncategorized-list">
+    <app-content-item [content]="content"></app-content-item>
+  </div>
 </div>

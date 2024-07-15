@@ -2,10 +2,10 @@
   <h2>{{ content.title }}</h2>
   <img [src]="content.imgSrc" alt="{{ content.title }}" />
   <p>{{ content.description }}</p>
-  <p><strong>Director:</strong> {{ content.author }}</p>
+  <p><strong>Author:</strong> {{ content.author }}</p>
   <p><strong>Type:</strong> {{ content.type }}</p>
   <p><strong>Tags:</strong> {{ content.tags.join(', ') }}</p>
-  <p><strong>Release Date:</strong> {{ content.publishedDate | date }}</p>
+  <p *ngIf="content.publishedDate"><strong>Release Date:</strong> {{ content.publishedDate | date }}</p>
 </div>
 <div *ngIf="!content">
   <p>Loading content details...</p>

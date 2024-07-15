@@ -8,6 +8,7 @@ import { ContentDetailComponent } from './content-detail/content-detail.componen
 import { UserFormComponent } from './user-form/user-form.component';
 import { BuyComponent } from './buy/buy.component';
 import { SellComponent } from './sell/sell.component';
+import { FilterIContentPipe } from './filter-icontent.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { SellComponent } from './sell/sell.component';
     ContentDetailComponent,
     UserFormComponent,
     BuyComponent,
-    SellComponent
+    ContentListComponent,
+    SellComponent,
+    FilterIContentPipe
   ],
   imports: [
     BrowserModule,
